@@ -58,5 +58,6 @@ weather_labels = {
 # Predict and show result
 if st.button("Predict Weather Condition"):
     prediction = model.predict(input_data)[0]
-    readable_output = weather_labels.get(prediction, f"Unknown ({prediction})")
+   # readable_output = weather_labels.get(prediction, f"Unknown ({prediction})")
     st.success(f"✅ Predicted Weather: {readable_output}")
+
